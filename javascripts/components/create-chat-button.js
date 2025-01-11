@@ -11,7 +11,7 @@ export default apiInitializer("1.14.0", (api) => {
       getOPPosterFromTopic() {
         if (url.includes('/t/')) {
           let Op;
-          let Opp
+          let Opp;
           Op = fetch(`${url}.json`).then((result) => {
             /*result["post_stream"]["posts"][0]["username"]);*/
             Opp = 'Hi';
