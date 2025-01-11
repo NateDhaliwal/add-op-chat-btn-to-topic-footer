@@ -8,9 +8,11 @@ export default apiInitializer("1.14.0", (api) => {
   api.onPageChange((url, title) => {
     class CreateChatButton extends Component {
       @action
-      async getOPPosterFromTopic() {
+      getOPPosterFromTopic() {
         if (url.includes('/t/')) {
-          await fetch(`${url}.json`).then((result) => return result["post_stream"]["posts"][0]["username"]);
+          let Op;
+          Op = fetch(`${url}.json`).then((result) => return result["post_stream"]["posts"][0]["username"]);
+          return Op;
         } else {
           return;
         }
