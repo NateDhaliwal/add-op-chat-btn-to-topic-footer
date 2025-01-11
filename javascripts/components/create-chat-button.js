@@ -10,7 +10,7 @@ export default apiInitializer("1.14.0", (api) => {
       @action
       async getOPPosterFromTopic() {
         if (url.includes('/t/')) {
-          await fetch(url + ".json").then((result) => return result["post_stream"]["posts"][0]["username"]);
+          await fetch(`${url}.json`).then((result) => return result["post_stream"]["posts"][0]["username"]);
         } else {
           return;
         }
