@@ -19,6 +19,7 @@ export default apiInitializer("1.14.0", (api) => {
             console.log(Opp);
             return 'hi';
           });
+          window.location.href=`/chat/new-message?recipients=${Op}`;
           return Op;
         } else {
           return;
