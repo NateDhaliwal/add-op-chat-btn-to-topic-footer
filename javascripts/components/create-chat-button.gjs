@@ -12,7 +12,7 @@ export default apiInitializer("1.14.0", (api) => {
       @action
       getOPPosterFromTopic() {
         if (url.includes('/t/')) {
-          ajax(url + ".json", { type: "GET" }).then((result) => return result["post_stream"]["posts"][0]["username"]);
+          fetch(url + ".json").then((result) => return result["post_stream"]["posts"][0]["username"]);
         } else {
           return;
         }
@@ -23,6 +23,7 @@ export default apiInitializer("1.14.0", (api) => {
           @icon="eye"
           @label={{theme-prefix "chat_with_op"}}
         />
+      </template>
     };
   });
 });
