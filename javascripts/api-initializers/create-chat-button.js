@@ -24,6 +24,6 @@ export default apiInitializer("1.14.0", (api) => {
             return true;
         },
         classNames: ["chat-with-op"],
-        dependentKeys = [],
+        dependentKeys = ["topic.id"],
     });
 });
