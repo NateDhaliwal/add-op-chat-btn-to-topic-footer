@@ -9,7 +9,7 @@ export default apiInitializer("1.14.0", (api) => {
         id: "chat-with-op",
         priority: 0,
         icon() {
-            return "chat"
+            return "eye";
         },
         translatedLabel() {
           return settings.topic_group_button_label;
