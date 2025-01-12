@@ -1,0 +1,7 @@
+topic_group_button_label:
+  default: "Chat with OP label"
+  type: text
+
+topic_group_button_title:
+  default: "Chat with OP title"
+  type: text
