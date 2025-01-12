@@ -20,10 +20,13 @@ export default apiInitializer("1.14.0", (api) => {
         action() {
             console.log(this);
         },
-        displayed() {
-            return true;
+        dropdown() {
+          return this.site.mobileView;
         },
         classNames: ["chat-with-op"],
         dependentKeys = ["topic.id"],
+        displayed() {
+            return true;
+        },
     });
 });
