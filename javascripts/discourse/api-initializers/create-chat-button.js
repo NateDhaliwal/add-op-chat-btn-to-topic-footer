@@ -18,7 +18,8 @@ export default apiInitializer("1.14.0", (api) => {
           return settings.topic_group_button_title;
         },
         action() {
-            console.log(`This: ${this}, topicid: ${this.get("topic.id")}`)
+            console.log(`This: ${this}, topicid: ${this.get("topic.id")}`);
+            window.location.href = `/t/${this.get("topic.id")}`;
         },
         dropdown() {
           return this.site.mobileView;
