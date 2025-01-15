@@ -24,7 +24,7 @@ export default apiInitializer("1.14.0", (api) => {
           return this.site.mobileView;
         },
         classNames: ["chat-with-op"],
-        dependentKeys = ["topic.id"],
+        dependentKeys: ["topic.id"],
         displayed() {
             return true;
         },
