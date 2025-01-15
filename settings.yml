@@ -1,26 +1,7 @@
-#topic_group_button_label:
-#  default: "Chat with OP label"
-#  type: string
-
-#topic_group_button_title:
-#  default: "Chat with OP title"
-#  type: string
-
-
-topic_group_button_enabled:
-  default: true
-  client: true
-topic_group_button_url:
-  default: "https://www.discourse.org"
-  client: true
-topic_group_button_title:
-  default: "Button description here.."
-  client: true
 topic_group_button_label:
-  default: "Click Me"
-  client: true
-topic_group_button_allowed_group:
-  default: "trust_level_4"
-  client: true
-topic_group_button_icon:
-  default: ""
+  default: "Chat with OP label"
+  type: string
+
+topic_group_button_title:
+  default: "Chat with OP title"
+  type: string
